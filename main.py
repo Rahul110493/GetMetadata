@@ -3,13 +3,6 @@ import json
 
 metadata_url = 'http://MY_URL/latest/'
 
-def is_json(myjson):
-    try:
-        json.loads(myjson)
-    except ValueError:
-        return False
-    return True
-
 if __name__ == '__main__':
     metdatapath = ["meta-data/"]
     output = {}
